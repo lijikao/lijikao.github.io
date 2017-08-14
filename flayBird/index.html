@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas width="800" height="600" id="canvas"></canvas>
+</body>
+
+</html>
+<script src="./sky.js"></script>
+<script src="./land.js"></script>
+<script src="./bird.js"></script>
+<script src="./pipe.js"></script>
+<script>
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    ctx.font = "20px 微软雅黑";
+    ctx.fillStyle = "hotpink";
+    //创建时间
+    var lastTime = new Date();
+    var currentTime = new Date();
+    var totalTime = 0;
+    // 加载图片
+    var imageNames = ["sky", "land", "pipe1", "pipe2", "birds"];
+    var imagesObj = {};
+    var count = 0;
+    imageNames.forEach(function (imageName) {
+        var image = new Image();
+        image.src = "imgs/" + imageName + ".png";
+        imagesObj[imageName] = image;
+        image.onload = function () {
+            count += 1;
+            if (count == imageNames.length) {
+                // console.log("ok");
+                callBack();
+            }
+        }
+    });
+    //加载完图片,之后执行某件事
+    function callBack(images) {
+        //穿件一个数组存放所有的元素对象
+        var rolesArr = new Array();
+        //使用图片创建天空元素
+        for (var i = 0; i < 2; i++) {
+            var sky = new Sky({
+                ctx: ctx,
+                image: imagesObj["sky"],
+                x: i * imagesObj["sky"].width
+
+            });
+            rolesArr.push(sky);
+            // console.log(rolesArr);
+        }
+        // console.log(sky.x);
+
+
+
+        //创建陆地元素
+        for (var i = 0; i < 4; i++) {
+            var land = new Land({
+                ctx: ctx,
+                image: imagesObj["land"],
+                x: i * imagesObj["land"].width,
+                y: canvas.height - imagesObj["land"].height
+            });
+            rolesArr.push(land);
+        }
+
+        //创建管道元素
+        //计算出间隙的大小
+        var gap = (canvas.width - 6 * imagesObj["pipe1"].width) / 5;
+        for (var i = 0; i < 6; i++) {
+            var pipe = new Pipe({
+                ctx: ctx,
+                topImage: imagesObj["pipe2"],
+                bottomImage: imagesObj["pipe1"],
+                space: 100,
+                canvasWidth: canvas.width,
+                canvasHeight: canvas.height,
+                x: 300 + i * (imagesObj["pipe1"].width + gap),
+                bottom: imagesObj["land"].height,
+                gap: gap
+            });
+            rolesArr.push(pipe);
+        }
+
+        //创建小鸟元素
+        var bird = new Bird({
+            ctx: ctx,
+            image: imagesObj["birds"],
+            x: 100,
+            y: 100
+        });
+        rolesArr.push(bird);
+
+        canvas.addEventListener("click", function () {
+            bird.speed = -0.2;
+        })
+
+
+        function draw() {
+            var Die = false;
+            //计算时间
+            currentTime = new Date();
+            var deltaTime = currentTime - lastTime;
+            lastTime = currentTime;
+            // 清空画布
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.beginPath();
+            for (var i = 0; i < rolesArr.length; i++) {
+                var role = rolesArr[i];
+                role.draw(deltaTime);
+            }
+            //判断是否死亡
+            if (bird.y < 0 || bird.y > canvas.height - imagesObj["land"].height - bird.height) {
+                Die = true;
+            }
+            if (ctx.isPointInPath(bird.x + bird.width / 2, bird.y + bird.height / 2)) {
+                Die = true;
+            }
+            // console.log(rolesArr);
+            // sky.draw();
+            //计算分秒
+            totalTime += deltaTime;
+            var second = Math.floor(totalTime / 1000);
+            var hour = Math.floor(second / 3600);
+            var minute = Math.floor(second % 3600 / 60);
+            var second = Math.floor(second % 60);
+            var text = "渣渣" + hour + "小时" + minute + "分钟" + second + "秒";
+            var texth = ctx.measureText(text);
+            //绘制文字到最上角
+            ctx.fillText(text, canvas.width - texth.width - 20, 20);
+             if (Die) return;
+            animation = requestAnimationFrame(draw);
+        }
+        draw();
+    }
+    function getRandom(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+</script>
