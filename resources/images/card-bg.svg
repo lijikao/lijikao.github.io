@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="1302px" viewBox="0 0 1920 1302" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>logo背景</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 1920 0 1920 1302 0 1302"></polygon>
+        <linearGradient x1="-25%" y1="75%" x2="163.27235%" y2="-9.61404628%" id="linearGradient-3">
+            <stop stop-color="#EEEEEE" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FF9850" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="75%" y1="25%" x2="-25%" y2="75%" id="linearGradient-4">
+            <stop stop-color="#DEE3F3" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#ADB5D3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="logo背景" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-26">
+            <g id="Rectangle">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#F7F8FC" xlink:href="#path-1"></use>
+                <rect fill="url(#linearGradient-3)" mask="url(#mask-2)" transform="translate(1760.322943, 1150.322943) rotate(45.000000) translate(-1760.322943, -1150.322943) " x="1484.32294" y="874.322943" width="552" height="552" rx="4"></rect>
+                <rect fill="url(#linearGradient-4)" style="mix-blend-mode: multiply;" mask="url(#mask-2)" transform="translate(119.837647, 274.837647) rotate(40.000000) translate(-119.837647, -274.837647) " x="-156.162353" y="-1.16235343" width="552" height="552" rx="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

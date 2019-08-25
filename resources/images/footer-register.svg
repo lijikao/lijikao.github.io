@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="192px" viewBox="0 0 1920 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFBA64" offset="0%"></stop>
+            <stop stop-color="#F16B4E" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="1920" height="192"></rect>
+        <linearGradient x1="31.6176719%" y1="71.5842695%" x2="31.6176719%" y2="3.22792433%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-7">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="底部广告">
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="Mask" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            <g id="Group-16" opacity="0.5" mask="url(#mask-3)" stroke="url(#linearGradient-4)" stroke-width="1.19999993">
+                <g transform="translate(624.000000, -194.000000)" id="Oval">
+                    <circle cx="326" cy="326" r="326"></circle>
+                    <circle cx="326" cy="326" r="307.98895"></circle>
+                    <circle cx="326" cy="326" r="289.977901"></circle>
+                    <circle cx="326" cy="326" r="271.966851"></circle>
+                    <circle cx="326" cy="326" r="253.955801"></circle>
+                    <circle cx="326" cy="326" r="235.944751"></circle>
+                    <circle cx="326" cy="326" r="217.933702"></circle>
+                    <circle cx="326" cy="326" r="199.922652"></circle>
+                </g>
+            </g>
+            <rect id="Rectangle" fill="url(#linearGradient-5)" opacity="0.3" mask="url(#mask-3)" transform="translate(1684.757972, -41.881638) rotate(45.000000) translate(-1684.757972, 41.881638) " x="1444.25797" y="-282.381638" width="481" height="481" rx="4"></rect>
+            <path d="M962.803833,83.0696617 L1073.35732,185.060004 C1074.98103,186.557951 1075.08299,189.088558 1073.58504,190.712273 C1072.82778,191.533115 1071.76184,192 1070.64505,192 L856.635155,192 C854.426016,192 852.635155,190.209139 852.635155,188 C852.635155,186.92924 853.064457,185.903182 853.826983,185.151462 L957.283389,83.1611196 C958.804116,81.6619423 961.23428,81.6216815 962.803833,83.0696617 Z" id="Rectangle" fill="url(#linearGradient-6)" opacity="0.5" mask="url(#mask-3)"></path>
+            <rect id="Rectangle" fill="url(#linearGradient-7)" opacity="0.3" mask="url(#mask-3)" transform="translate(320.768073, -15.166522) rotate(45.000000) translate(-320.768073, 15.166522) " x="142.768073" y="-193.166522" width="356" height="356" rx="4"></rect>
+        </g>
+    </g>
+</svg>
