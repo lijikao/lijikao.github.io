@@ -17,6 +17,20 @@ $(function(){
         $(this).closest('.section-content').siblings().find('img').attr('src',url);
     },function(){
     })
+
+    $('body').on('click', 'a[href^="#"]', function (event) {
+        var target = $(this).attr("href").substr(1);
+        var top = 0;
+        if($("#"+target).length > 0){
+            top = $("#"+target).offset().top - 70;
+        }
+        else if($("[name='"+target+"']").length > 0){
+            top = $("[name='"+target+"']").offset().top - 70; 
+        }
+        
+        event.preventDefault();
+        $('body,html').stop().animate({'scrollTop': top,}, 500);
+    });
 }) 
 
 $(function(){
