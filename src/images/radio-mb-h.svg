@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>单选选中</title>
+    <g id="单选选中" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10,0 C15.5228475,0 20,4.4771525 20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 Z M10,1 C5.02943725,1 1,5.02943725 1,10 C1,14.9705627 5.02943725,19 10,19 C14.9705627,19 19,14.9705627 19,10 C19,5.02943725 14.9705627,1 10,1 Z" id="椭圆形" fill="#633BB9" fill-rule="nonzero"></path>
+        <circle id="椭圆形" fill="#633BB9" cx="10" cy="10" r="5"></circle>
+    </g>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>返回顶部hover</title>
+    <g id="返回顶部hover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-21">
+            <rect id="矩形" fill="#07C5D5" x="0" y="0" width="50" height="50" rx="4"></rect>
+            <path d="M31.1782877,21 C31.6321069,21 32,21.3678931 32,21.8217123 C32,22.2342751 31.6959561,22.5758247 31.2997143,22.6345151 L31.1782877,22.6434245 L19.6434245,22.6434245 L19.6434245,34.1782877 C19.6434245,34.5908506 19.3393806,34.9324002 18.9431389,34.9910905 L18.8217123,35 C18.4091494,35 18.0675998,34.6959561 18.0089095,34.2997143 L18,34.1782877 L18,21 L31.1782877,21 Z" id="路径" fill="#FFFFFF" fill-rule="nonzero" transform="translate(25.000000, 28.000000) rotate(45.000000) translate(-25.000000, -28.000000) "></path>
+        </g>
+    </g>
+</svg>

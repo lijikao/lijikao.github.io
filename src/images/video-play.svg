@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>播放icon</title>
+    <defs>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#9465EF" offset="0%"></stop>
+            <stop stop-color="#7F5DF8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="播放icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-26">
+            <circle id="椭圆形" fill="url(#linearGradient-1)" cx="40" cy="40" r="40"></circle>
+            <g id="编组-25" transform="translate(29.000000, 23.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <path d="M26.1019012,20.4929085 L6.66805889,33.2872207 C4.70329604,34.5804251 2.04256815,34.0652461 0.725588142,32.1363039 C0.252546765,31.4435205 0,30.6282598 0,29.7941671 L0,4.20554268 C0,1.88303173 1.91765137,0 4.2828618,0 C5.13228929,0 5.96253857,0.247987536 6.66805889,0.712489036 L26.1015443,13.5068012 C28.0663072,14.8000056 28.5913146,17.412699 27.2739777,19.3419917 C26.963338,19.7969172 26.5651905,20.1878768 26.1019012,20.4929085 Z" id="路径"></path>
+            </g>
+        </g>
+    </g>
+</svg>
