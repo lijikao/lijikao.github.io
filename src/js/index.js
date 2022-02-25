@@ -256,20 +256,10 @@ $(function () {
       mySwiperVideobox.slideTo($(this).index() + 1)
     })
     var swiperHouette = new Swiper(".swiper-houette", {
-      slidesPerView: "auto",
+      slidesPerView: 1,
       loop: true,
-      speed: 2000,
-      autoplay: 1,
-      loopedSlides: 5,
-      loopAdditionalSlides: 2,
-      delay: 0,
-      stopOnLastSlide: false,
+      speed: 300,
       centeredSlides: true,
-      autoplayDisableOnInteraction: false,
-      disableOnInteraction: false,
-      spaceBetween: 40,
-      centeredSlides: true,
-      watchSlidesProgress: true,
       prevButton: ".houette-pre",
       nextButton: ".houette-next",
       pagination: ".swiper-pagination-houette"
@@ -281,17 +271,6 @@ $(function () {
       autoplay: false, //有时间值(按照事件自动播放)和false(不自动播放)
       invoke: 1 //默认是第一项。
     })
-
-    $(".houette").hover(
-      function () {
-        swiperHouette.params.speed = 300
-        swiperHouette.stopAutoplay()
-      },
-      function () {
-        swiperHouette.params.speed = 2000
-        swiperHouette.startAutoplay()
-      }
-    )
 
     $(".talk .section-viewpoint .viewpoint-card a").hover(
       function () {
@@ -352,6 +331,11 @@ $(function () {
 
     $(window).on("scroll", triggerNumber)
     triggerNumber()
+
+    navScroll()
+    $(window).on("scroll", function () {
+      navScroll()
+    })
   }
 
   //tel
@@ -360,10 +344,58 @@ $(function () {
   })
 
   function mobile() {
+    var browserType = null
+    function getBrowserInfo() {
+      var ua = navigator.userAgent.toLocaleLowerCase()
+      if (ua.match(/msie/) != null || ua.match(/trident/) != null) {
+        browserType = "IE"
+        browserVersion =
+          ua.match(/msie ([\d.]+)/) != null
+            ? ua.match(/msie ([\d.]+)/)[1]
+            : ua.match(/rv:([\d.]+)/)[1]
+      } else if (ua.match(/firefox/) != null) {
+        browserType = "火狐"
+      } else if (ua.match(/ubrowser/) != null) {
+        browserType = "UC"
+      } else if (ua.match(/opera/) != null) {
+        browserType = "欧朋"
+      } else if (ua.match(/bidubrowser/) != null) {
+        browserType = "百度"
+      } else if (ua.match(/metasr/) != null) {
+        browserType = "搜狗"
+      } else if (
+        ua.match(/tencenttraveler/) != null ||
+        ua.match(/qqbrowse/) != null
+      ) {
+        browserType = "QQ"
+      } else if (ua.match(/maxthon/) != null) {
+        browserType = "遨游"
+      } else if (ua.match(/chrome/) != null) {
+        var is360 = _mime("type", "application/vnd.chromium.remoting-viewer")
+        function _mime(option, value) {
+          var mimeTypes = navigator.mimeTypes
+          for (var mt in mimeTypes) {
+            if (mimeTypes[mt][option] == value) {
+              return true
+            }
+          }
+          return false
+        }
+        if (is360) {
+          browserType = "360"
+        } else {
+          browserType = "chrome"
+        }
+      } else if (ua.match(/safari/) != null) {
+        browserType = "Safari"
+      }
+    }
+    getBrowserInfo()
+    $(document).on("click", ".play-icon", function () {})
     var mySwiperGuest = new Swiper(".swiper-guest", {
       loop: true,
-      prevButton: ".swiper-button-prev",
-      nextButton: ".swiper-button-next",
+      prevButton: ".swiper-button-prev-guest",
+      nextButton: ".swiper-button-next-guest",
       autoplay: 2000,
       freeMode: true,
       loop: true,
@@ -372,57 +404,32 @@ $(function () {
       pagination: ".swiper-pagination-guest",
       autoplayDisableOnInteraction: false
     })
-    var mySwiperVideobox = new Swiper(".swiper-videobox", {
-      loop: true,
-      prevButton: ".swiper-button-prev",
-      nextButton: ".swiper-button-next",
-      slidesPerView: 1,
-      autoplayDisableOnInteraction: false,
-      onSlideChangeStart: function (swiper) {
-        $(".videobox video").each(function () {
-          $(this)[0].pause()
-          $(this).siblings(".play-icon").show()
-          $(this).siblings(".close-icon").hide()
-        })
-        if (swiper.activeIndex == 3) {
-          $(".videobox .l-content-b li")
-            .eq(2)
-            .addClass("active")
-            .siblings()
-            .removeClass("active")
-        } else if (swiper.activeIndex == 2) {
-          $(".videobox .l-content-b li")
-            .eq(1)
-            .addClass("active")
-            .siblings()
-            .removeClass("active")
-        } else if (swiper.activeIndex == 1) {
-          $(".videobox .l-content-b li")
-            .eq(0)
-            .addClass("active")
-            .siblings()
-            .removeClass("active")
-        } else if (swiper.activeIndex == 0) {
-          $(".videobox .l-content-b li")
-            .eq(2)
-            .addClass("active")
-            .siblings()
-            .removeClass("active")
-        } else {
-          $(".videobox .l-content-b li")
-            .eq(0)
-            .addClass("active")
-            .siblings()
-            .removeClass("active")
-        }
-      },
-      pagination: ".swiper-pagination-video-box",
-      autoplayDisableOnInteraction: false
-    })
+    if (browserType != "QQ") {
+      var mySwiperVideobox = new Swiper(".swiper-videobox", {
+        loop: true,
+        prevButton: ".swiper-button-prev",
+        nextButton: ".swiper-button-next",
+        slidesPerView: 1,
+        autoplayDisableOnInteraction: false,
+        onSlideChangeStart: function (swiper) {
+          $(".videobox video").each(function () {
+            $(this)[0].pause()
+            $(this)[0].load()
+            $(this).siblings(".play-icon").show()
+            $(this).siblings(".close-icon").hide()
+          })
+        },
+        pagination: ".swiper-pagination-video-box",
+        autoplayDisableOnInteraction: false
+      })
+    } else {
+      $("#videobox").addClass("QQ")
+    }
+
     var mySwiperAuthority = new Swiper(".swiper-authority", {
       loop: true,
-      prevButton: ".swiper-button-prev",
-      nextButton: ".swiper-button-next",
+      prevButton: ".swiper-button-prev-authority",
+      nextButton: ".swiper-button-next-authority",
       slidesPerView: 1,
       autoplay: 3000,
       autoplayDisableOnInteraction: false,
@@ -430,22 +437,13 @@ $(function () {
       autoplayDisableOnInteraction: false
     })
     var swiperHouette = new Swiper(".swiper-houette", {
-      slidesPerView: "auto",
+      slidesPerView: 1,
       loop: true,
-      speed: 2000,
-      autoplay: 1,
-      loopedSlides: 5,
-      loopAdditionalSlides: 2,
-      delay: 0,
-      stopOnLastSlide: false,
+      speed: 300,
       centeredSlides: true,
-      autoplayDisableOnInteraction: false,
-      disableOnInteraction: false,
-      spaceBetween: 20,
-      centeredSlides: true,
-      watchSlidesProgress: true,
       prevButton: ".houette-pre",
-      nextButton: ".houette-next"
+      nextButton: ".houette-next",
+      pagination: ".swiper-pagination-houette"
     })
     //awards
     var solutionTabAwards = new Tab({
@@ -456,7 +454,7 @@ $(function () {
     })
 
     //awards
-    $(".awardss .scroll-box li").on("click", function () {
+    $(".awards .b .scroll-box li").on("click", function () {
       $(this)
         .closest(".scroll-box")
         .siblings(".tab_btn")
@@ -465,7 +463,7 @@ $(function () {
         .trigger("click")
       $(this).addClass("active").siblings().removeClass("active")
     })
-    $(".awardss .scroll-box li").eq(0).addClass("active")
+    $(".awards .b .scroll-box li").eq(0).addClass("active")
     //number
     var numFalg = false
     var triggerNumber = function triggerNumber() {
@@ -522,6 +520,16 @@ $(function () {
     event.preventDefault()
     $(".form-box").removeClass("active")
   })
+  $(document).on("click", ".model-box .close-icon", function (event) {
+    event.preventDefault()
+    $(".model-box").removeClass("active")
+    $(".form-box").removeClass("active")
+  })
+  $(document).on("click", ".model-box .l-btn", function (event) {
+    event.preventDefault()
+    $(".model-box").removeClass("active")
+    $(".form-box").removeClass("active")
+  })
   $(document).on("click", function (event) {
     if (
       $(event.target).closest(".from-content").hasClass("from-content") ||
@@ -545,6 +553,11 @@ $(function () {
     $(this).closest(".video-box").find("video")[0].pause()
     $(this).hide()
     $(this).siblings(".play-icon").show()
+  })
+
+  $("video").on("play", function () {
+    $(this).closest(".video-box").find(".play-icon").hide()
+    $(this).closest(".video-box").find(".close-icon").show()
   })
 
   //talk
@@ -594,13 +607,46 @@ $(function () {
   function leftTimer(year, month, day, hour, minute, second) {
     var leftTime =
       new Date(year, month - 1, day, hour, minute, second) - new Date() //计算剩余的毫秒数
-    if (leftTime <= 0) {
-      $(".time-box").html("火热进行中...")
-      $(".banner .l-btn").html("观看直播")
-      $(".banner .l-btn").attr(
-        "href",
-        "https://wx.vzan.com/live/tvchat-1506326265?shauid=bRqRTLXdTKQpv6MiE0ri_w**&vprid=0&sharetstamp=1637062982697#/"
-      )
+    if (leftTime <= 0 && leftTime > -1800000) {
+      return false
+    }
+    if (leftTime <= 1800000 && leftTime > -12600000) {
+      $(".tel-down").find("span").html("PPT下载")
+      $(".tel-down").attr("href", "https://host.huiju.cool/p/55e3c")
+      $(".banner .time-box").remove()
+      $(".banner .live-box").show()
+      $(".banner .btn-box").remove()
+      return false
+    }
+
+    if (leftTime <= -12600000 && leftTime > -14400000) {
+      $(".tel-down").find("span").html("PPT下载")
+      $(".tel-down").attr("href", "https://host.huiju.cool/p/55e3c")
+      $(".banner .time-box").remove()
+      $(".banner .live-box").show()
+      $(".banner .btn-box").remove()
+      $(".awards").addClass("active")
+      return false
+    }
+    if (leftTime <= -14400000 && leftTime > -34200000) {
+      $(".tel-down").find("span").html("PPT下载")
+      $(".tel-down").attr("href", "https://host.huiju.cool/p/55e3c")
+      $(".banner .time-box").remove()
+      $(".banner .live-box").remove()
+      $(".banner .lives-box").show()
+      $(".banner .btn-box").remove()
+      $(".awards").addClass("active")
+      return false
+    }
+    if (leftTime <= -34200000) {
+      $(".tel-down").find("span").html("PPT下载")
+      $(".tel-down").attr("href", "https://host.huiju.cool/p/55e3c")
+      $(".banner .time-box").remove()
+      $(".banner .live-box").remove()
+      $(".banner .lives-box").remove()
+      $(".banner .livess-box").show()
+      $(".banner .btn-box").remove()
+      $(".awards").addClass("active")
       clearInterval(time)
       return false
     }
@@ -627,7 +673,7 @@ $(function () {
     return i
   }
   time = setInterval(function () {
-    leftTimer(2022, 1, 6, 8, 30, 0)
+    leftTimer(2022, 3, 4, 8, 30, 0)
   }, 1000)
 
   //radio checkbox
@@ -708,7 +754,6 @@ $(function () {
         $(this).closest(".position-box").removeClass("inputs")
       }
       var ret = /[\s\S]{1,10}/
-      console.log($(this).val())
       if (ret.test($(this).val())) {
         $(this).addClass("success").removeClass("error")
       } else {
@@ -720,7 +765,7 @@ $(function () {
     if (document.cookie.length > 0) {
       var c_start = document.cookie.indexOf(c_name + "=")
       if (c_start != -1) {
-        c_startc_start = c_start + c_name.length + 1
+        c_start = c_start + c_name.length + 1
         var c_end = document.cookie.indexOf(";", c_start)
         if (c_end == -1) c_end = document.cookie.length
         return unescape(document.cookie.substring(c_start, c_end))
@@ -731,16 +776,14 @@ $(function () {
   $(document).ready(function () {
     //准备对接数据
     window.clInfo = {} //获取token
-    $.ajax({
-      type: "get",
-      url:
-        "https://host.huiju.cool/formdata/get/73d59294f34f40f68ac2c619422c2ff0",
-      contentType: "application/json;charset=utf-8",
-      success: function (data) {
+    $.get(
+      "https://host.huiju.cool/formdata/get/7e2a40224df94d8c8f53da319adbf494",
+      function (result) {
         clInfo.cltoken = result.token
       }
-    })
+    )
   })
+
   $("#btnSubmit").click(function (e) {
     if (
       $(".form-box input").hasClass("error") ||
@@ -770,22 +813,32 @@ $(function () {
     if ($(".shape-box .radio-box p.active").index() == -1) {
       clInfo.custom_353155 = ""
     } else {
-      clInfo.custom_353155 = $(".shape-box .radio-box p.active").index()
+      clInfo.custom_353155 = $(".shape-box .radio-box p.active").text()
     }
     clInfo.custom_887759 = ""
     $(".join-box .checkbox-box p").each(function () {
       if ($(this).hasClass("active"))
-        clInfo.custom_887759 = clInfo.custom_887759 + $(this).index()
+        clInfo.custom_887759 = clInfo.custom_887759 + $(this).text() + ","
     })
 
     clInfo.utma = getCookie("c__utma")
     clInfo.utmb = getCookie("c__utmb") //添加身份信息
-    clInfo.identityType = "pc"
+
+    var win_width =
+      window.innerWidth ||
+      document.documentElement.clientWidth ||
+      document.body.clientWidth
+    if (win_width >= 979) {
+      clInfo.identityType = "pc"
+    } else {
+      clInfo.identityType = "mb"
+    }
+
     clInfo.identityValue = "13800000000" //提交表单数据到荟聚
 
     $.ajax({
       type: "post",
-      url: "https://t-dahui-api.vhall.com/api/sends/checkCode",
+      url: "https://dahui-api.vhall.com/api/sends/checkCode",
       contentType: "application/x-www-form-urlencoded",
       dataType: "json",
       data: {
@@ -797,11 +850,11 @@ $(function () {
           $.ajax({
             type: "post",
             url:
-              "https://host.huiju.cool/form/73d59294f34f40f68ac2c619422c2ff0",
-            // url: "https://host.huiju.cool/form/1e7dbd725c104001a002f3d054769b20",
+              "https://host.huiju.cool/form/7e2a40224df94d8c8f53da319adbf494",
             data: clInfo,
             success: function (data) {
-              $(".form-box .tipsss").addClass("show")
+              // $(".form-box .tipsss").addClass("show")
+              $(".model-box").addClass("active")
               $(".form-box .tipss").removeClass("show")
               $(".form-box .tips").removeClass("show")
             },
@@ -845,7 +898,7 @@ $(function () {
     $.ajax({
       type: "post",
       url:
-        "https://t-dahui-api.vhall.com/api/sends/sendCode?phone=" +
+        "https://dahui-api.vhall.com/api/sends/sendCode?phone=" +
         $(".tel-box").find("#mobile").val(),
       contentType: "application/x-www-form-urlencoded",
       dataType: "json",
@@ -859,4 +912,36 @@ $(function () {
       }
     })
   })
+
+  //copy
+  $(".copy-box .copy-btn").on("click", function () {
+    $(".copy-box input")[0].select()
+    document.execCommand("copy")
+    $(".tips-success").addClass("active")
+    setTimeout(function () {
+      $(".tips-success").removeClass("active")
+    }, 3000)
+  })
+
+  function navScroll() {
+    var H = $(window).scrollTop()
+    var flag = false
+    var index = 0
+    $(".l-section").each(function (e) {
+      if (!flag && H <= $(this).offset().top) {
+        flag = !flag
+        index = $(this).index() - 1
+        index = index < 0 ? 0 : index
+        $(".header-nav li")
+          .eq(index)
+          .find("a")
+          .addClass("active")
+          .end()
+          .siblings()
+          .find("a")
+          .removeClass("active")
+        return
+      }
+    })
+  }
 })

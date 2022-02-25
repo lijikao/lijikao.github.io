@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>对勾</title>
+    <g id="对勾" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="椭圆形" fill="#56CEA2" cx="10" cy="10" r="10"></circle>
+        <polygon id="路径" fill="#FFFFFF" fill-rule="nonzero" points="14.3866323 5 16 6.77148795 8.12813306 15 4 10.7781187 5.59581103 8.98881686 8.11057637 11.5609382"></polygon>
+    </g>
+</svg>

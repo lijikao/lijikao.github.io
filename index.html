@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh">
   <head>
     <meta charset="UTF-8" />
@@ -6,11 +6,12 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+    <meta name="baidu-site-verification" content="code-NKpaD4zz01" />
     <link rel="stylesheet" href="./src/css/global.css" />
     <link rel="stylesheet" href="./src/css/swiper-3.4.2.min.css" />
     <link rel="stylesheet" href="./src/css/index.css" />
-    <!-- <link rel="shortcut icon" href="./src/images/.ico" /> -->
-    <title>2020企业直播创见大会</title>
+    <link rel="shortcut icon" href="./src/images/favicon.ico" />
+    <title>2022企业直播创见大会</title>
     <meta
       name="keywords"
       content="万象无界 润物有声
@@ -20,6 +21,15 @@
       name="description"
       content="打通营销全触点，让增长无处不在；润泽数字化学习，让人才生生不息；"
     />
+    <script>
+      var _hmt = _hmt || []
+      ;(function () {
+        var hm = document.createElement("script")
+        hm.src = "https://hm.baidu.com/hm.js?f5747078006973ca1326a11ecfb9d271"
+        var s = document.getElementsByTagName("script")[0]
+        s.parentNode.insertBefore(hm, s)
+      })()
+    </script>
     <script src="./src/js/jquery.min.js"></script>
     <script src="./src/js/swiper-3.4.2.min.js"></script>
   </head>
@@ -27,6 +37,7 @@
     <div class="head"><div class="header" id="headerTarget">
   <div class="header-content">
     <a href="https://www.vhall.com/" target="_blank" class="header-logo" alt="">
+      <img src="./src/images/head-logo.svg" alt="" />
     </a>
     <div class="header-title">
       <div class="header-nav">
@@ -64,20 +75,20 @@
 
           <li class="header-nav-li">
             <a href="#awards" class="nav-item"
-              >大会奖项
+              >行业奖项
 
               <i class="fold-icon right"></i>
             </a>
           </li>
           <li class="header-nav-li">
-            <a href="#awards" class="nav-item"
+            <a href="#houette" class="nav-item"
               >荣誉顾问团
 
               <i class="fold-icon right"></i>
             </a>
           </li>
           <li class="header-nav-li">
-            <a href="#awards" class="nav-item"
+            <a href="#authority" class="nav-item"
               >权威认证
 
               <i class="fold-icon right"></i>
@@ -92,7 +103,7 @@
           </li>
           <li class="header-nav-li">
             <a href="#case" class="nav-item"
-              >合作媒体
+              >合作伙伴
 
               <i class="fold-icon right"></i>
             </a>
@@ -114,6 +125,322 @@
     </div>
   </div>
 </div>
+
+<!-- <div class="top-tips" id="top-tips">
+  <a href="https://elic.vhall.com" target="_blank">
+    <div class="top-tips-content">
+      <img src="./src/images/top-tips-img.png" alt="" />
+      <span class="l-btn green">点击报名</span>
+    </div>
+  </a>
+</div>
+<div class="top-tips-slide" id="top-tips-slide">
+  <div class="tips-info">
+    <div class="tips-img">
+      <img src="./src/images/banner-img.png" alt="" />
+    </div>
+    <h1>2022/3/4&nbsp;&nbsp;中国<span></span>上海</h1>
+    <div class="clearfix btn-box">
+      <a href="https://elic.vhall.com/" class="l-btn green" target="_blank"
+        >活动报名</a
+      >
+    </div>
+  </div>
+  <div class="video-box">
+    <img src="./src/images/banner-video-resource.png" alt="" />
+    <video
+      id="banner-video"
+      x5-playsinline
+      playsinline
+      webkit-playsinline
+      autoplay="autoplay"
+      muted="muted"
+      src="./src/images/banner-video.mp4"
+      poster="./src/images/banner-video-resource.png"
+      object-fit="fill"
+      loop=""
+    ></video>
+  </div>
+</div>
+<div class="top-tips-model" id="top-tips-model">
+  <div class="tips-model-content">
+    <a href="https://elic.vhall.com" target="_blank">
+      <span class="l-btn green">点击报名</span>
+    </a>
+    <i class="close-icon" id="tips-btn"></i>
+  </div>
+</div>
+<style>
+  .top-tips-slide {
+    position: fixed;
+    top: 0;
+    height: 80vh;
+    left: 0;
+    right: 0;
+    transition: all 2s ease;
+    overflow: hidden;
+    z-index: 999999999999;
+    opacity: 1;
+  }
+  .tips-info img {
+    display: inline-block;
+    width: 100%;
+    max-width: 800px;
+  }
+  .tips-info h1 {
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    margin-top: 35px;
+  }
+  .tips-info h1 span {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    vertical-align: middle;
+    margin: 0 10px 10px 10px;
+  }
+  .tips-info .btn-box {
+    text-align: center;
+  }
+  .tips-info .btn-box:after {
+    background: url(./src/images/banner-btn-bg-h.png) center no-repeat;
+  }
+  .tips-info .btn-box a {
+    display: inline-block;
+    float: none;
+    margin-right: 0;
+    line-height: 60px;
+    font-size: 24px;
+    color: #fff;
+    transition: all 0.3s;
+    border: none;
+    width: 216px;
+    height: 60px;
+    background: url(./src/images/banner-btn-bg.png) center no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    transition: all 0.3s;
+  }
+  .tips-info .btn-box a:hover {
+    background: url(./src/images/banner-btn-bg-h.png) center no-repeat;
+    background-size: cover;
+  }
+  .tips-info {
+    position: relative;
+    top: 50%;
+    z-index: 1;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+  .top-tips-slide .video-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .top-tips-slide .video-box video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .top-tips-slide.active {
+    height: 0vh;
+    /* opacity: 0; */
+  }
+  .top-tips-slide a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  .top-tips {
+    width: 100%;
+    height: 52px;
+    background: url(./src/images/top-tips-bg.png) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    transition: all 6s;
+    opacity: 0;
+  }
+  .top-tips.active {
+    opacity: 1;
+  }
+  @media (max-width: 978px) {
+    .top-tips {
+      display: none;
+    }
+  }
+  .top-tips img {
+    display: inline-block;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 100px;
+  }
+  .top-tips-content {
+    display: inline-block;
+    max-width: 1160px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  .top-tips a {
+    width: 100%;
+    height: 100%;
+    padding-top: 11px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .top-tips .l-btn {
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-right: 60px;
+    margin-top: 0;
+    float: none;
+    display: inline-block;
+    background: #fff !important;
+    color: #402c9d !important;
+    border-color: #fff !important;
+    font-size: 14px;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.3s;
+    animation: star 1s infinite;
+  }
+  .top-tips .l-btn:hover {
+    color: #a475ff !important;
+  }
+  .top-tips-model {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    display: none !important;
+  }
+  .top-tips-model.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .top-tips-model a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+  .top-tips-model .l-btn {
+    width: 140px;
+    height: 48px;
+    line-height: 46px;
+    vertical-align: middle;
+    margin-right: 60px;
+    margin-top: 0;
+    float: none;
+    display: inline-block;
+    background: url(./src/images/tips-model-btn.png) center no-repeat !important;
+    background-size: 100% 100% !important;
+    color: #fff !important;
+    border-color: transparent !important;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.3s;
+    position: absolute;
+    bottom: 65px;
+    left: 40px;
+    text-align: center;
+  }
+  .top-tips-model .l-btn:hover {
+    background: url(./src/images/tips-model-btn-h.png) center no-repeat !important;
+    background-size: 100% 100% !important;
+  }
+  .top-tips-model .tips-model-content {
+    width: 640px;
+    height: 360px;
+    position: absolute;
+    background: url(./src/images/top-tips-model-img.png) center no-repeat;
+    background-size: 100% 100%;
+    top: 50%;
+    margin-top: -180px;
+    left: 50%;
+    margin-left: -320px;
+    border-radius: 8px;
+  }
+  .top-tips-model i {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.6) url(./src/images/close-icon-tips.svg) center
+      no-repeat;
+    background-size: 10px 15px;
+    border-radius: 50%;
+    transform: rotateZ(90deg);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .top-tips-model i:hover {
+    transform: rotateZ(450deg);
+  }
+  @keyframes star {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+</style>
+<script>
+  var btn = document.getElementById("tips-btn")
+  var btnBox = document.getElementById("top-tips-model")
+  var slideBox = document.getElementById("top-tips-slide")
+  var tipsBox = document.getElementById("top-tips")
+  var flag = false
+  window.addEventListener("scroll", function () {
+    var scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop
+    if (scrollTop == 0) return
+    if (scrollTop != 0) {
+      if (flag) {
+        slideBox.setAttribute("class", "top-tips-slide active")
+        tipsBox.setAttribute("class", "top-tips active")
+      }
+      flag = true
+    }
+  })
+  setTimeout(function () {
+    slideBox.setAttribute("class", "top-tips-slide active")
+    tipsBox.setAttribute("class", "top-tips active")
+  }, 2000)
+  setTimeout(function () {
+    btnBox.setAttribute("class", "top-tips-model active")
+  }, 1000)
+  btn.onclick = function () {
+    btnBox.setAttribute("class", "top-tips-model")
+  }
+</script> -->
 </div>
     <div class="content"><!-- banner -->
 <div class="banner">
@@ -124,7 +451,7 @@
           <img class="pc" src="./src/images/banner-img.png" alt="" />
           <img class="mb" src="./src/images/banner-img-mb.png" alt="" />
         </div>
-        <h1>2022/1/6&nbsp;&nbsp;中国<span></span>上海</h1>
+        <h1>2022/3/4&nbsp;&nbsp;中国<span></span>上海</h1>
         <div class="time-box">
           <p>
             <span class="time-date number">0</span
@@ -140,8 +467,52 @@
           </p>
         </div>
         <div class="live-box">
-          <a href="#" class="l-btn green"></a>
-          <a href="#" class="l-btn green"></a>
+          <a
+            href="https://dahui.vhall.com/operation/live/cn/212.html"
+            target="_blank"
+            class="l-btn green"
+            ><i></i><s></s
+          ></a>
+        </div>
+        <div class="lives-box">
+          <a
+            href="https://dahui.vhall.com/operation/live/cn/213.html"
+            class="l-btn green"
+            target="_blank"
+            ><i></i><s></s
+          ></a>
+          <a
+            href="https://dahui.vhall.com/operation/live/cn/214.html"
+            class="l-btn green"
+            target="_blank"
+            ><i></i><s></s
+          ></a>
+          <a
+            href="https://dahui.vhall.com/operation/live/cn/212.html"
+            class="l-btn green"
+            target="_blank"
+            ><i></i><s></s
+          ></a>
+        </div>
+        <div class="livess-box">
+          <a
+            href="https://dahui.vhall.com/operation/live/cn/213.html"
+            class="l-btn green"
+            target="_blank"
+            ><i></i><s></s
+          ></a>
+          <a
+            href="https://dahui.vhall.com/operation/live/cn/214.html"
+            class="l-btn green"
+            target="_blank"
+            ><i></i><s></s
+          ></a>
+          <a
+            href="https://dahui.vhall.com/operation/live/cn/212.html"
+            class="l-btn green"
+            target="_blank"
+            ><i></i><s></s
+          ></a>
         </div>
         <div class="clearfix btn-box">
           <a href="javascript:void(0);" class="l-btn green from-btn-click"
@@ -204,7 +575,7 @@
             从2020到2021，疫情来袭未能阻挡住万千企业的坚强生长，我们正在用直播的方式去跨过一道道物理的屏障，走向“无界”的远方，科技“无声”却“有生”，从营销到培训，企业直播生生不息的润泽力量正在被创见！
           </p>
           <p>
-            2022企业直播创见大会旨在集结行业先锋力量、优秀领航企业、生态合作伙伴等共同探讨数字化转型下的企业直播前沿洞见、创新应用，人才培养以及未来趋势。+位大咖以采购数字化转型助力企业发展为核心内容，共同探讨前瞻性数字化新机遇、见证行业实践案例。
+            2022企业直播创见大会旨在集结行业先锋力量、优秀领航企业、生态合作伙伴等共同探讨数字化转型下的企业直播前沿洞见、创新应用、人才培养以及未来趋势。
           </p>
         </div>
       </div>
@@ -228,12 +599,12 @@
           </li>
           <li>
             <h3>
-              <span>数字化营销</span>
+              <span>营销增长分会场</span>
             </h3>
           </li>
           <li>
             <h3>
-              <span>数字化学习</span>
+              <span>数字化学习分会场</span>
             </h3>
           </li>
         </ul>
@@ -253,8 +624,8 @@
                 >
               </p>
               <p>
-                <span>9:20 — 9:40</span><span>主题演讲</span>
-                <span>引领风向：企业直播迈向4.0时代</span
+                <span>9:20 — 09:40</span><span>主题演讲</span>
+                <span>引领风向：企业直播迈向全连接时代</span
                 ><span
                   ><img src="./src/images/agenda-img-02.png" alt="" /><i
                     >林彦廷 <s>微吼创始人&CEO</s>
@@ -262,7 +633,7 @@
                 >
               </p>
               <p>
-                <span>9:40 — 10:00</span><span>主题演讲</span>
+                <span>09:40 — 10:00</span><span>主题演讲</span>
                 <span>突破边界：共创数字生态新基建</span
                 ><span
                   ><img src="./src/images/agenda-img-03.png" alt="" /><i
@@ -271,7 +642,7 @@
                 >
               </p>
               <p>
-                <span>10:00 — 10:20</span><span>主题演讲</span>
+                <span>10:00 —10:20</span><span>主题演讲</span>
                 <span>栉风沐雨十二载：客户成功即是微吼成功</span
                 ><span
                   ><img src="./src/images/agenda-img-04.png" alt="" /><i
@@ -280,7 +651,11 @@
                 >
               </p>
               <p>
-                <span>10:20 —10:40</span><span>主题演讲</span>
+                <span>10:20 —10:40</span><span>颁奖典礼</span>
+                <span>金麟奖颁奖盛典</span>
+              </p>
+              <p>
+                <span>10:40 — 11:00</span><span>主题演讲</span>
                 <span>营销 5.0 时代的增长新思维</span
                 ><span
                   ><img src="./src/images/agenda-img-05.png" alt="" /><i
@@ -289,7 +664,7 @@
                 >
               </p>
               <p>
-                <span>10:40 — 11:00</span><span>主题演讲</span>
+                <span>11:00 — 11:20</span><span>主题演讲</span>
                 <span>数字化学习助推企业数字化转型</span
                 ><span
                   ><img src="./src/images/agenda-img-06.png" alt="" /><i
@@ -298,18 +673,27 @@
                 >
               </p>
               <p>
-                <span>11:00 — 11:20</span><span>启动仪式</span>
-                <span>
-                  <i
-                    >微吼直播研究院&科特勒咨询直播营销师联名认证签约仪式启动<s
-                      >微吼直播研究院&博奥研究院直播培训师联名认证签约启动仪式</s
-                    ></i
-                  >
-                </span>
+                <span>11:20 — 11:50</span><span>启动仪式</span>
+                <span>联名认证签约启动仪式</span>
+                <span
+                  ><i style="width: 100%"
+                    >直播研究院&科特勒咨询&nbsp;直播营销师联名认证
+                    <s>直播研究院&博奥研究院&nbsp;直播培训师联名认证</s></i
+                  ></span
+                >
               </p>
               <p>
-                <span>11:20 — 11:50</span><span>颁奖典礼</span>
-                <span>金麟奖颁奖盛典</span>
+                <span>11:50 — 12:00</span><span>主题演讲</span>
+                <span>人才赋能：互联网干部培训的五个关键词</span>
+                <span
+                  ><img src="./src/images/agenda-img-06666.png" alt="" /><i
+                    >燕乃玲 <s>中国浦东干部学院对外交流与培训开发部副主任</s></i
+                  ></span
+                >
+              </p>
+              <p>
+                <span>12:00 — 14:00</span
+                ><span style="display: inline-block">午餐</span>
               </p>
             </div>
           </li>
@@ -321,18 +705,18 @@
               </p>
               <p>
                 <span>14:00 — 14:20</span><span>主题演讲</span>
-                <span>企业增长的机遇与路径</span
+                <span>数字时代的B2B企业增长模型</span
                 ><span
-                  ><img src="./src/images/agenda-img-07.png" alt="" />
-                  <i>魏家东 <s>东狮品牌咨询CEO</s></i></span
+                  ><img src="./src/images/agenda-img-07777.png" alt="" />
+                  <i>田原 <s>B2B营销增长专家</s></i></span
                 >
               </p>
               <p>
                 <span>14:20 — 14:40</span><span>主题演讲</span>
-                <span>中国企业化数字化营销与私域流量观察</span
+                <span>中国企业化数字营销与私域流量观察</span
                 ><span
                   ><img src="./src/images/agenda-img-21.png" alt="" />
-                  <i><s>梅波弯弓Digital和私域流量观察创始人</s></i></span
+                  <i>梅波<s>弯弓Digital&私域流量观察创始人</s></i></span
                 >
               </p>
               <p>
@@ -340,7 +724,7 @@
                 <span>500强企业数字化营销的模式和策略思维</span
                 ><span
                   ><img src="./src/images/agenda-img-08.png" alt="" /><i
-                    >屈凡利 <s>前华为集团数字营销部部长&南美洲地区部CMO</s>
+                    >屈凡利 <s>前华为集团数字营销部部长</s>
                   </i></span
                 >
               </p>
@@ -355,7 +739,7 @@
               </p>
               <p>
                 <span>15:20 — 15:40</span><span>主题演讲</span>
-                <span>私域直播如何成为企业直播新利器</span
+                <span>私域直播如何成为企业破局增长新利器</span
                 ><span
                   ><img src="./src/images/agenda-img-10.png" alt="" /><i
                     >韩佳新 <s>微吼市场总监</s></i
@@ -363,16 +747,11 @@
                 >
               </p>
               <p>
-                <span>15:40 —16:00</span><span>主题演讲</span>
-                <span>直播，让工业更性感</span
-                ><span
-                  ><img src="./src/images/agenda-img-11.png" alt="" /><i
-                    >修斌 <s>树根互联市场总经理</s></i
-                  ></span
-                >
+                <span>15:40 —15:55</span
+                ><span style="display: inline-block">茶歇</span>
               </p>
               <p>
-                <span>16:00 — 16:20</span><span>主题演讲</span>
+                <span>15:55 — 16:15</span><span>主题演讲</span>
                 <span> 证券行业直播探索与实践 </span>
                 <span
                   ><img src="./src/images/agenda-img-12.png" alt="" /><i
@@ -381,7 +760,7 @@
                 >
               </p>
               <p>
-                <span>16:20 — 16:40</span><span>主题演讲</span>
+                <span>16:15 — 16:35</span><span>主题演讲</span>
                 <span>康宝莱企业直播营销最佳实践</span>
                 <span
                   ><img src="./src/images/agenda-img-22.png" alt="" /><i
@@ -390,8 +769,18 @@
                 >
               </p>
               <p>
-                <span>16:40 — 17:00</span><span>圆桌对话</span>
-                <span>魏家东（主持）、屈凡利、沈稳杰、董如芳、马琳</span>
+                <span>16:35 — 17:10</span><span>圆桌对话</span>
+                <span>万象无界：直播营销助力业务增长</span>
+                <span class="pc"
+                  ><i style="width: 100%; font-size: 14px"
+                    >田原（主持）、屈凡利、沈稳杰、刘涛、陈光兴</i
+                  ></span
+                >
+                <span class="mb"
+                  ><i style="width: 100%; font-size: 12px"
+                    >田原（主持）、屈凡利、沈稳杰、刘涛、陈光兴</i
+                  ></span
+                >
               </p>
             </div>
           </li>
@@ -403,14 +792,6 @@
               </p>
               <p>
                 <span>14:00 — 14:20</span><span>主题演讲</span>
-                <span>数字化时代下，企业大学如何迭代发展</span
-                ><span
-                  ><img src="./src/images/agenda-img-14.png" alt="" />
-                  <i>钱冈 <s>原国药大学教务长</s></i></span
-                >
-              </p>
-              <p>
-                <span>14:20 — 14:40</span><span>主题演讲</span>
                 <span>数字化内核“交互式体验”</span
                 ><span
                   ><img src="./src/images/agenda-img-15.png" alt="" /><i
@@ -419,7 +800,7 @@
                 >
               </p>
               <p>
-                <span>14:40 — 15:00</span><span>主题演讲</span>
+                <span>14:20 — 14:40</span><span>主题演讲</span>
                 <span>培育企业直播生态，助力企业转型发展</span
                 ><span
                   ><img src="./src/images/agenda-img-16.png" alt="" /><i
@@ -428,16 +809,16 @@
                 >
               </p>
               <p>
-                <span>15:00 — 15:20</span><span>主题演讲</span>
+                <span>14:40 — 15:00</span><span>主题演讲</span>
                 <span>直播：加速企业人才培养体系数字化转型</span
                 ><span
                   ><img src="./src/images/agenda-img-17.png" alt="" /><i
-                    >毛利涛 <s>微吼直播培训研究院执行院长</s></i
+                    >毛利涛 <s>直播培训研究院执行院长</s></i
                   ></span
                 >
               </p>
               <p>
-                <span>15:20 —15:40</span><span>主题演讲</span>
+                <span>15:00 —15:20</span><span>主题演讲</span>
                 <span>基于驾考模式的培训体系</span
                 ><span
                   ><img src="./src/images/agenda-img-18.png" alt="" /><i
@@ -445,8 +826,9 @@
                   ></span
                 >
               </p>
+
               <p>
-                <span>15:40 — 16:00</span><span>主题演讲</span>
+                <span>15:20 — 15:40</span><span>主题演讲</span>
                 <span>怎样组织好一场面向干部教育的直播培训课</span
                 ><span
                   ><img src="./src/images/agenda-img-19.png" alt="" /><i
@@ -455,7 +837,11 @@
                 >
               </p>
               <p>
-                <span>16:00 — 16:20</span><span>主题演讲</span>
+                <span>15:40 — 15:55</span
+                ><span style="display: inline-block">茶歇</span>
+              </p>
+              <p>
+                <span>15:55 — 16:15</span><span>主题演讲</span>
                 <span> 全业务链贸易人才数字化培养项目实践分享 </span>
                 <span
                   ><img src="./src/images/agenda-img-20.png" alt="" /><i
@@ -464,7 +850,7 @@
                 >
               </p>
               <p>
-                <span>16:20 — 16:40</span><span>主题演讲</span>
+                <span>16:15 — 16:35</span><span>主题演讲</span>
                 <span>直播在组织学习中的实践应用</span>
                 <span
                   ><img src="./src/images/agenda-img-23.png" alt="" />
@@ -472,8 +858,18 @@
                 </span>
               </p>
               <p>
-                <span>16:40 — 17:00</span><span>圆桌对话</span>
-                <span>龙奕汐（主持）、钱冈、赵汉利、王猛、毛利涛</span>
+                <span>16:35 — 17:10</span><span>圆桌对话</span>
+                <span>润物有声：数字化学习背景下的人才赋能</span>
+                <span class="pc"
+                  ><i style="width: 110%; font-size: 14px"
+                    >邵臻轶（主持）、滕新阳、赵汉利、王猛、毛利涛</i
+                  ></span
+                >
+                <span class="mb"
+                  ><i style="width: 110%; font-size: 12px"
+                    >邵臻轶（主持）、滕新阳、赵汉利、王猛、毛利涛</i
+                  ></span
+                >
               </p>
             </div>
           </li>
@@ -602,18 +998,7 @@
                 <div class="viewpoint-box"></div>
               </div>
             </div>
-            <div class="viewpoint-card card-animate card-seat-2 pc">
-              <div class="viewpoint-wrapper">
-                <a href="#" target="_blank">
-                  <div class="viewpoint-box">私域直播</div>
-                  <div class="viewpoint-box-hover">
-                    <h3>私域直播</h3>
-                    <p>私域直播成为企业直播营销新利器</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="viewpoint-card card-animate card-seat-2 mb">
+            <div class="viewpoint-card card-animate card-seat-2">
               <div class="viewpoint-wrapper">
                 <a href="javascript:void(0);">
                   <div class="viewpoint-box">私域直播</div>
@@ -624,40 +1009,18 @@
                 </a>
               </div>
             </div>
-            <div class="viewpoint-card card-animate card-seat-3 pc">
-              <div class="viewpoint-wrapper">
-                <a href="#" target="_blank">
-                  <div class="viewpoint-box">直播元宇宙</div>
-                  <div class="viewpoint-box-hover">
-                    <h3>直播元宇宙</h3>
-                    <p>技术&场景双升级<br />打造未来直播新体验</p>
-                  </div></a
-                >
-              </div>
-            </div>
-            <div class="viewpoint-card card-animate card-seat-3 mb">
+            <div class="viewpoint-card card-animate card-seat-3">
               <div class="viewpoint-wrapper">
                 <a href="javascript:void(0);">
-                  <div class="viewpoint-box">直播元宇宙</div>
+                  <div class="viewpoint-box">千企千面</div>
                   <div class="viewpoint-box-hover">
-                    <h3>直播元宇宙</h3>
-                    <p>技术&场景双升级，打造未来直播新体验</p>
+                    <h3>千企千面</h3>
+                    <p>解锁更高效<br />直播培训解决方案</p>
                   </div></a
                 >
               </div>
             </div>
-            <div class="viewpoint-card card-animate card-seat-4 pc">
-              <div class="viewpoint-wrapper">
-                <a href="#" target="_blank">
-                  <div class="viewpoint-box">赋能增长</div>
-                  <div class="viewpoint-box-hover">
-                    <h3>赋能增长</h3>
-                    <p>品效协同，降本增效</p>
-                  </div></a
-                >
-              </div>
-            </div>
-            <div class="viewpoint-card card-animate card-seat-4 mb">
+            <div class="viewpoint-card card-animate card-seat-4">
               <div class="viewpoint-wrapper">
                 <a href="javascript:void(0);">
                   <div class="viewpoint-box">赋能增长</div>
@@ -668,18 +1031,7 @@
                 >
               </div>
             </div>
-            <div class="viewpoint-card card-animate card-seat-5 pc">
-              <div class="viewpoint-wrapper">
-                <a href="#" target="_blank">
-                  <div class="viewpoint-box">最佳实践</div>
-                  <div class="viewpoint-box-hover">
-                    <h3>最佳实践</h3>
-                    <p>500强企业直播探索与实践</p>
-                  </div></a
-                >
-              </div>
-            </div>
-            <div class="viewpoint-card card-animate card-seat-5 mb">
+            <div class="viewpoint-card card-animate card-seat-5">
               <div class="viewpoint-wrapper">
                 <a href="javascript:void(0);">
                   <div class="viewpoint-box">最佳实践</div>
@@ -690,18 +1042,7 @@
                 >
               </div>
             </div>
-            <div class="viewpoint-card card-animate card-seat-6 pc">
-              <div class="viewpoint-wrapper">
-                <a href="#" target="_blank">
-                  <div class="viewpoint-box">生态链接</div>
-                  <div class="viewpoint-box-hover">
-                    <h3>生态链接</h3>
-                    <p>直播加乘生态伙伴</p>
-                  </div></a
-                >
-              </div>
-            </div>
-            <div class="viewpoint-card card-animate card-seat-6 mb">
+            <div class="viewpoint-card card-animate card-seat-6">
               <div class="viewpoint-wrapper">
                 <a href="javascript:void(0);">
                   <div class="viewpoint-box">生态链接</div>
@@ -717,24 +1058,13 @@
                 <div class="viewpoint-box"></div>
               </div>
             </div>
-            <div class="viewpoint-card card-animate card-seat-8 pc">
-              <div class="viewpoint-wrapper">
-                <a href="#" target="_blank">
-                  <div class="viewpoint-box">千企千面</div>
-                  <div class="viewpoint-box-hover">
-                    <h3>千企千面</h3>
-                    <p>解锁更高效的直播培训解决方案</p>
-                  </div></a
-                >
-              </div>
-            </div>
-            <div class="viewpoint-card card-animate card-seat-8 mb">
+            <div class="viewpoint-card card-animate card-seat-8">
               <div class="viewpoint-wrapper">
                 <a href="javascript:void(0);">
-                  <div class="viewpoint-box">千企千面</div>
+                  <div class="viewpoint-box">直播元宇宙</div>
                   <div class="viewpoint-box-hover">
-                    <h3>千企千面</h3>
-                    <p>解锁更高效的直播培训解决方案</p>
+                    <h3>直播元宇宙</h3>
+                    <p>技术&场景双升级<br />打造未来直播新体验</p>
                   </div></a
                 >
               </div>
@@ -749,18 +1079,7 @@
                 <div class="viewpoint-box"></div>
               </div>
             </div>
-            <div class="viewpoint-card card-animate card-seat-11 pc">
-              <div class="viewpoint-wrapper">
-                <a href="#" target="_blank">
-                  <div class="viewpoint-box">数字化新基建</div>
-                  <div class="viewpoint-box-hover">
-                    <h3>数字化新基建</h3>
-                    <p>共话企业培训效能时代</p>
-                  </div></a
-                >
-              </div>
-            </div>
-            <div class="viewpoint-card card-animate card-seat-11 mb">
+            <div class="viewpoint-card card-animate card-seat-11">
               <div class="viewpoint-wrapper">
                 <a href="javascript:void(0);">
                   <div class="viewpoint-box">数字化新基建</div>
@@ -771,18 +1090,7 @@
                 >
               </div>
             </div>
-            <div class="viewpoint-card card-animate card-seat-12 pc">
-              <div class="viewpoint-wrapper">
-                <a href="#" target="_blank">
-                  <div class="viewpoint-box">数字化学习</div>
-                  <div class="viewpoint-box-hover">
-                    <h3>数字化学习</h3>
-                    <p>挖掘数智化培训核心能力</p>
-                  </div></a
-                >
-              </div>
-            </div>
-            <div class="viewpoint-card card-animate card-seat-12 mb">
+            <div class="viewpoint-card card-animate card-seat-12">
               <div class="viewpoint-wrapper">
                 <a href="javascript:void(0);">
                   <div class="viewpoint-box">数字化学习</div>
@@ -807,54 +1115,67 @@
 
 <!-- awards -->
 <div class="awards l-section" id="awards">
-  <div class="l-container">
+  <div class="l-container a">
     <div class="l-title">
       <img src="./src/images/awards-title.png" alt="" />
     </div>
     <div class="l-body">
+      <div class="l-content-t">
+        <p>
+          金麟奖是由国内领先的企业直播服务商微吼发起的「直播研究院」联合具备全球影响力的知名营销咨询机构「科特勒咨询集团」,
+          以及专注企业数字化学习人才能力“研究和赋能”的机构「博奥研究院」共同发起。
+        </p>
+        <p>
+          金麟奖自创立之初，便致力于通过发掘企业直播领域最佳实践案例、优秀企业和从业者，打造企业直播领域最具权威性、前瞻性以及创新性的专业奖项及行业盛典，共同推动企业直播行业长远发展。
+        </p>
+      </div>
       <ul class="clearfix">
         <li>
           <img src="./src/images/awards-img-01.svg" alt="" />
           <h3>直播创新奖</h3>
-          <p>年度最佳直播营销/培训</p>
+          <p>最佳直播营销/培训创新奖</p>
         </li>
         <li>
           <img src="./src/images/awards-img-02.svg" alt="" />
           <h3>直播实践奖</h3>
-          <p>年度最佳直播营销/培训</p>
+          <p>最佳直播营销/培训实践奖</p>
         </li>
         <li>
           <img src="./src/images/awards-img-03.svg" alt="" />
           <h3>直播互动奖</h3>
-          <p>年度最佳直播营销/培训</p>
+          <p>最佳直播营销/培训互动奖</p>
         </li>
         <li>
           <img src="./src/images/awards-img-04.svg" alt="" />
           <h3>直播效果奖</h3>
-          <p>年度最佳直播营销/培训</p>
+          <p>最佳直播营销/培训效果奖</p>
         </li>
         <li>
           <img src="./src/images/awards-img-05.svg" alt="" />
-          <h3>直播领军人物奖</h3>
-          <p>年度最佳直播营销/培训</p>
+          <h3>直播领军人物</h3>
+          <p>年度最佳直播领军人物</p>
         </li>
         <li>
           <img src="./src/images/awards-img-06.svg" alt="" />
-          <h3>直播杰出贡献人物奖</h3>
-          <p>年度最佳直播营销/培训</p>
+          <h3>直播杰出贡献人物</h3>
+          <p>年度直播杰出贡献人物</p>
         </li>
       </ul>
     </div>
   </div>
-</div>
-
-<!-- awardss -->
-<div class="awardss l-section" id="awardss">
-  <div class="l-container">
+  <div class="l-container b">
     <div class="l-title">
       <img src="./src/images/awards-title.png" alt="" />
     </div>
     <div class="l-body">
+      <div class="l-content-t">
+        <p>
+          金麟奖是由国内领先的企业直播服务商微吼发起的「直播研究院」联合具备全球影响力的知名营销咨询机构「科特勒咨询集团」,以及专注企业数字化学习人才能力“研究和赋能”的机构「博奥研究院」共同发起。
+        </p>
+        <p>
+          金麟奖自创立之初，便致力于通过发掘企业直播领域最佳实践案例、优秀企业和从业者，打造企业直播领域最具权威性、前瞻性以及创新性的专业奖项及行业盛典，共同推动企业直播行业长远发展。
+        </p>
+      </div>
       <div class="tab solution-awards" data-index="6" data-direction="cross">
         <ul class="tab_btn clearfix">
           <li>
@@ -876,11 +1197,11 @@
 
           <li>
             <img src="./src/images/awards-img-05.svg" alt="" />
-            <h3>直播领军人物奖</h3>
+            <h3>直播领军人物</h3>
           </li>
           <li>
             <img src="./src/images/awards-img-06.svg" alt="" />
-            <h3>直播杰出贡献人物奖</h3>
+            <h3>直播杰出贡献人物</h3>
           </li>
         </ul>
         <div class="scroll-box">
@@ -914,110 +1235,396 @@
         </div>
         <ul class="tab_item clearfix">
           <li class="clearfix">
-            <div class="left">
-              <img src="" alt="" />
-              <div>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
+            <div class="aaa">
+              <div class="left">
+                <img src="./src/images/awradss-02.png" alt="" />
+                <div>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-02.png"
+                      alt=""
+                    />神州数码融信软件有限公司
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-03.png"
+                      alt=""
+                    />国家林业和草原局管理干部学院
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-04.png"
+                      alt=""
+                    />中电金信软件有限公司
+                  </p>
+                  <p>
+                    <img src="./src/images/awradss-img-logo-01.png" alt="" />
+                    农业银行
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="right">
-              <img src="" alt="" />
-              <div>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-              </div>
-            </div>
-          </li>
-          <li class="clearfix">
-            <div class="left">
-              <img src="" alt="" />
-              <div>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-              </div>
-            </div>
-            <div class="right">
-              <img src="" alt="" />
-              <div>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-              </div>
-            </div>
-          </li>
-          <li class="clearfix">
-            <div class="left">
-              <img src="" alt="" />
-              <div>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-              </div>
-            </div>
-            <div class="right">
-              <img src="" alt="" />
-              <div>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-              </div>
-            </div>
-          </li>
-          <li class="clearfix">
-            <div class="left">
-              <img src="" alt="" />
-              <div>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-              </div>
-            </div>
-            <div class="right">
-              <img src="" alt="" />
-              <div>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
+              <div class="right">
+                <img src="./src/images/awradss-03.png" alt="" />
+                <div>
+                  <p class="pc">
+                    <img
+                      src="./src/images/awradss-img-logo-05.png"
+                      alt=""
+                    />中衍期货有限公司
+                  </p>
+                  <p class="mb">
+                    <img
+                      src="./src/images/awradss-img-logo-05.png"
+                      alt=""
+                    /><span
+                      style="
+                        white-space: nowrap;
+                        display: inline-block;
+                        transform: translateX(-10%);
+                      "
+                      >中衍期货有限公司</span
+                    >
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-06.png"
+                      alt=""
+                    />平安证券
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-07.png"
+                      alt=""
+                    />InfoQ
+                  </p>
+                </div>
               </div>
             </div>
           </li>
           <li class="clearfix">
-            <div class="left">
-              <img src="" alt="" />
-              <div>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
+            <div class="bbb">
+              <div class="left">
+                <img src="./src/images/awradss-04.png" alt="" />
+                <div>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-08.png"
+                      alt=""
+                    />中国电信
+                  </p>
+                  <p>
+                    <img src="./src/images/awradss-img-logo-12.png" alt="" />
+                    <span>北京卓育英才教育科技有限公司</span>
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-09.png"
+                      alt=""
+                    />中燃集团
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-11.png"
+                      alt=""
+                    />中经网浙江信息有限公司
+                  </p>
+
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-10.png"
+                      alt=""
+                    />万里汇
+                  </p>
+                  <p>
+                    <img src="./src/images/awradss-img-logo-13.png" alt="" />
+                    <span>诺华肿瘤（中国）有限公司</span>
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="right">
-              <img src="" alt="" />
-              <div>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
+              <div class="right">
+                <img src="./src/images/awradss-05.png" alt="" />
+                <div>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-14.png"
+                      alt=""
+                    />康宝莱
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-15.png"
+                      alt=""
+                    />第一三共
+                  </p>
+                  <p class="pc">
+                    <img src="./src/images/awradss-img-logo-16.png" alt="" />
+                    <span>谷歌信息技术（中国）有限公司</span>
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-17.png"
+                      alt=""
+                    />学牙网
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-18.png"
+                      alt=""
+                    />华金期货
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-19.png"
+                      alt=""
+                    />中宏保险
+                  </p>
+                  <p>
+                    <img src="./src/images/awradss-img-logo-20.png" alt="" />
+                    <span>奥多比系统软件</span>
+                  </p>
+                  <p class="pc">
+                    <img
+                      src="./src/images/awradss-img-logo-21.png"
+                      alt=""
+                    />惟客数据
+                  </p>
+                  <p class="mb">
+                    <img src="./src/images/awradss-img-logo-16.png" alt="" />
+                    <span style="width: 110%"
+                      >谷歌信息技术（中国）有限公司</span
+                    >
+                  </p>
+                </div>
               </div>
             </div>
           </li>
           <li class="clearfix">
-            <div class="left">
-              <img src="" alt="" />
-              <div>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
+            <div>
+              <div class="left">
+                <img src="./src/images/awradss-06.png" alt="" />
+                <div>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-22.png"
+                      alt=""
+                    />英特尔（中国）有限公司
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-23.png"
+                      alt=""
+                    />伟达公关
+                  </p>
+                </div>
+              </div>
+              <div class="right">
+                <img src="./src/images/awradss-07.png" alt="" />
+                <div class="ccc">
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-24.png"
+                      alt=""
+                    />励展博览集团
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-25.png"
+                      alt=""
+                    />新华三人才研学中心
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-26.png"
+                      alt=""
+                    />农商银行发展联合会
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="right">
-              <img src="" alt="" />
-              <div>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
-                <p>北京微吼时代科技有限公司</p>
+          </li>
+          <li class="clearfix">
+            <div>
+              <div class="left" style="width: 100%">
+                <img src="./src/images/awradss-08.png" alt="" />
+                <div class="ccc">
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-27.png"
+                      alt=""
+                    />埃森哲（中国）有限公司
+                  </p>
+                  <p>
+                    <img src="./src/images/awradss-img-logo-28.png" alt="" />3M
+                    中国
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-29.png"
+                      alt=""
+                    />广发信用卡
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-30.png"
+                      alt=""
+                    />亚马逊云科技
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-31.png"
+                      alt=""
+                    />越秀地产
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-32.png"
+                      alt=""
+                    />中电金信软件有限公司
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="clearfix">
+            <div>
+              <div class="left">
+                <img src="./src/images/awradss-09.png" alt="" />
+                <div class="ccc">
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-33.png"
+                      alt=""
+                    />魏家东
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-34.png"
+                      alt=""
+                    />梅波
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-35.png"
+                      alt=""
+                    />修斌
+                  </p>
+                </div>
+              </div>
+              <div class="right">
+                <img src="./src/images/awradss-10.png" alt="" />
+                <div class="ccc">
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-36.png"
+                      alt=""
+                    />荣卫林
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-37.png"
+                      alt=""
+                    />钱冈
+                  </p>
+
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-40.png"
+                      alt=""
+                    />张嘉伟
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-41.png"
+                      alt=""
+                    />霍志娇
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-38.png"
+                      alt=""
+                    />Anna Yin
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-39.png"
+                      alt=""
+                    />宋扬
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="clearfix">
+            <div>
+              <div class="left">
+                <img src="./src/images/awradss-11.png" alt="" />
+                <div class="ccc">
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-42.png"
+                      alt=""
+                    />郑颂安
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-43.png"
+                      alt=""
+                    />滕新阳
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-44.png"
+                      alt=""
+                    />张澧
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-45.png"
+                      alt=""
+                    />赵汉利
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-46.png"
+                      alt=""
+                    />王轶
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-47.png"
+                      alt=""
+                    />马明星
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-48.png"
+                      alt=""
+                    />张坤
+                  </p>
+                </div>
+              </div>
+              <div class="right">
+                <img src="./src/images/awradss-12.png" alt="" />
+                <div class="ccc">
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-49.png"
+                      alt=""
+                    />屈凡利
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-50.png"
+                      alt=""
+                    />沈稳杰
+                  </p>
+                  <p>
+                    <img
+                      src="./src/images/awradss-img-logo-51.png"
+                      alt=""
+                    />陈光兴
+                  </p>
+                </div>
               </div>
             </div>
           </li>
@@ -1037,44 +1644,680 @@
       <div class="swiper-container swiper-houette">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./src/images/houette-img-01.png" alt="" />
-            <img src="./src/images/houette-img-01.png" alt="" />
+            <div class="info-box">
+              <img src="./src/images/houette-img-01.png" alt="" />
+              <h3>屈凡利</h3>
+              <p>前华为集团<span>数字营销部部长</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-02.png" alt="" />
+              <h3>国秀娟</h3>
+              <p>BP商业合作伙伴 <span>创始人兼总裁</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-03.png" alt="" />
+              <h3>邹欣</h3>
+              <p class="pc">FORRESTER大中华区 <span>总经理</span></p>
+              <p class="mb">FORRESTER <span>大中华区总经理</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-04.png" alt="" />
+              <h3>班丽婵</h3>
+              <p class="pc">CMO训练营创始人&CEO</p>
+              <p class="mb">CMO训练营 <span>创始人&CEO</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-05.png" alt="" />
+              <h3>陈光兴</h3>
+              <p class="pc">方正证券零售业务部董事</p>
+              <p class="mb">方正证券 <span>零售业务部董事</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-06.png" alt="" />
+              <h3>张炎</h3>
+              <p class="pc">知乎商业事业部总经理</p>
+              <p class="mb">知乎商业事业部 <span>总经理</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-07.png" alt="" />
+              <h3>魏家东</h3>
+              <p>东狮品牌咨询CEO</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-08.png" alt="" />
+              <h3>修斌</h3>
+              <p class="pc">树根互联市场总经理</p>
+              <p class="mb">树根互联市场 <span>总经理</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-09.png" alt="" />
+              <h3>袁俊</h3>
+              <p>伏蛮匠智<span>创始人兼CEO</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-10.png" alt="" />
+              <h3>杨晨华</h3>
+              <p class="pc">华昂商务咨询有限公司<span>总经理</span></p>
+              <p class="mb">华昂商务咨询<span>有限公司总经理</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-11.png" alt="" />
+              <h3>曹开彬</h3>
+              <p class="pc">中国软件网、海比研究院CEO</p>
+              <p class="mb">中国软件网 <span>海比研究院CEO</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-1200.png" alt="" />
+              <h3>皮云正</h3>
+              <p>产业家主编资深媒体人</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-12.png" alt="" />
+              <h3>田原</h3>
+              <p>ToB营销增长顾问</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-13.png" alt="" />
+              <h3>贾跃</h3>
+              <p>Blue-dot CEO</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-14.png" alt="" />
+              <h3>林森</h3>
+              <p class="pc">纷析咨询联合创始人兼COO</p>
+              <p class="mb">纷析咨询 <span>联合创始人兼COO</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-15.png" alt="" />
+              <h3>李喆</h3>
+              <p class="pc">爱分析合伙人&首席分析师</p>
+              <p class="mb">爱分析合伙人 <span>首席分析师</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-16.png" alt="" />
+              <h3>马琳</h3>
+              <p>康宝莱（中国）<span>客户成功部高级总监</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-17.png" alt="" />
+              <h3>易广涛</h3>
+              <p>阿里拍卖数字业务<span>总经理</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-18.png" alt="" />
+              <h3>沈稳杰</h3>
+              <p class="pc">领克汽车数字运营部总监</p>
+              <p class="mb">领克汽车 <span>数字运营部总监</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-19.png" alt="" />
+              <h3>蔡丽</h3>
+              <p class="pc">上市公司市场与政府事务 <span>副总裁</span></p>
+              <p class="mb">上市公司市场 <span>与政府事务副总裁</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-20.png" alt="" />
+              <h3>钱冈</h3>
+              <p>原国药大学教务长</p>
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="./src/images/houette-img-04.png" alt="" />
-            <img src="./src/images/houette-img-04.png" alt="" />
+            <div class="info-box">
+              <img src="./src/images/houette-img-21.png" alt="" />
+              <h3>严冬梅</h3>
+              <p>CIO发展中心VP</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-22.png" alt="" />
+              <h3>闫跃龙</h3>
+              <p>知名商业评论人</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-23.png" alt="" />
+              <h3>成金兰</h3>
+              <p class="pc">
+                木兰姐品牌咨询创始人 <span>《打爆口碑》作者</span>
+              </p>
+              <p class="mb">木兰姐品牌咨询创始人《打爆口碑》作者</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-24.png" alt="" />
+              <h3>王丽丽</h3>
+              <p>前GE亚太CMO <span>一见塑造CEO</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-25.png" alt="" />
+              <h3>梅波</h3>
+              <p>弯弓创始人 <span>私域流量观察创始人</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-26.png" alt="" />
+              <h3>陈特军</h3>
+              <p>蓝莓会创始人</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-27.png" alt="" />
+              <h3>王兵</h3>
+              <p>首席赋能官创办人</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-28.png" alt="" />
+              <h3>刘杰</h3>
+              <p>国内银行业领导力和人力资源管理资深专家</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-29.png" alt="" />
+              <h3>马成功</h3>
+              <p>万达学院教学部总经理</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-30.png" alt="" />
+              <h3>吴谦</h3>
+              <p>《培训》杂志 <span>城市中心总经理</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-31.png" alt="" />
+              <h3>卢小东</h3>
+              <p>魔学院CGO</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-32.png" alt="" />
+              <h3>康迪</h3>
+              <p>时趣CMO</p>
+            </div>
+
+            <div class="info-box">
+              <img src="./src/images/houette-img-33.png" alt="" />
+              <h3>蒋顺利</h3>
+              <p>索信达控股CMO</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-34.png" alt="" />
+              <h3>王猛</h3>
+              <p>中国电信 <span>在线学习运营总监</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-35.png" alt="" />
+              <h3>张坤</h3>
+              <p>诺华肿瘤（中国）<span>数字化学习负责人</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-36.png" alt="" />
+              <h3>许楠</h3>
+              <p class="pc">多点数智学堂培训负责人</p>
+              <p class="mb">多点数智学堂<span>培训负责人</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-37.png" alt="" />
+              <h3>滕新阳</h3>
+              <p>东软集团人力资源部 <span>上海分部部长</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-38.png" alt="" />
+              <h3>孙雅雯</h3>
+              <p>银河证券数字金融中心 <span>视频直播项目负责人</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-39.png" alt="" />
+              <h3>荣卫林</h3>
+              <p>汇鸿学院执行院长</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-40.png" alt="" />
+              <h3>赵汉利</h3>
+              <p>来伊份学堂校长 <span>董事长特别助理</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-41.png" alt="" />
+              <h3>李皇子</h3>
+              <p class="pc">公关界的007创始人<span>主笔</span></p>
+              <p class="mb">公关界的007创始人 <span>主笔</span></p>
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="./src/images/houette-img-06.png" alt="" />
-            <img src="./src/images/houette-img-06.png" alt="" />
+            <div class="info-box">
+              <img src="./src/images/houette-img-42.png" alt="" />
+              <h3>陈敬</h3>
+              <p class="pc">铭师坊TTT研究院院长</p>
+              <p class="mb">铭师坊TTT研究院 <span>院长</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-43.png" alt="" />
+              <h3>陶驰</h3>
+              <p>中欧商业在线市场总监</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-44.png" alt="" />
+              <h3>Jennifer</h3>
+              <p>MasterlandCMO&联创</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-45.png" alt="" />
+              <h3>汪丽娜</h3>
+              <p>知外文化创始人</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-46.png" alt="" />
+              <h3>赵俊贤</h3>
+              <p>九天华纳CEO</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-47.png" alt="" />
+              <h3>邹杨</h3>
+              <p>船长BI副总裁</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-48.png" alt="" />
+              <h3>鉴锋</h3>
+              <p>零一裂变CEO</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-49.png" alt="" />
+              <h3>黄敏尉</h3>
+              <p>利欧数字CGO</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-50.png" alt="" />
+              <h3>刘红</h3>
+              <p class="pc">第一资源创始人、董事长</p>
+              <p class="mb">第一资源创始人 <span>董事长</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-51.png" alt="" />
+              <h3>仇泯之</h3>
+              <p>市场易CEO</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-52.png" alt="" />
+              <h3>田薇</h3>
+              <p class="pc">致远互联数字营销部总监</p>
+              <p class="mb">致远互联 <span>数字营销部总监</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-53.png" alt="" />
+              <h3>崔希真</h3>
+              <p>美通社亚太市场总监</p>
+            </div>
+
+            <div class="info-box">
+              <img src="./src/images/houette-img-54.png" alt="" />
+              <h3>徐志斌</h3>
+              <p>见实科技创始人&CEO</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-55.png" alt="" />
+              <h3>汪丹</h3>
+              <p>InfoQ 极客传媒总经理</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-56.png" alt="" />
+              <h3>徐海宁</h3>
+              <p>上海思创网络有限公司 <span>董事长</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-57.png" alt="" />
+              <h3>冉高跃</h3>
+              <p>ECV总经理</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-58.png" alt="" />
+              <h3>巨强</h3>
+              <p>中国教育技术协会 <span>金融专业委员会秘书长</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-59.png" alt="" />
+              <h3>陈振烨</h3>
+              <p class="pc">
+                前《经理人》杂志总编辑 <span>汇众传媒创始人</span>
+              </p>
+              <p class="mb">前《经理人》杂志总编辑汇众传媒创始人</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-60.png" alt="" />
+              <h3>信海光</h3>
+              <p>科技财经专栏作家</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-61.png" alt="" />
+              <h3>陶柏帆</h3>
+              <p>中国电信天翼云图 <span>XR产品总监</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-62.png" alt="" />
+              <h3>郭帅广</h3>
+              <p>创客贴开放生态负责人</p>
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="./src/images/houette-img-07.png" alt="" />
-            <img src="./src/images/houette-img-07.png" alt="" />
+            <div class="info-box">
+              <img src="./src/images/houette-img-64.png" alt="" />
+              <h3>周礼</h3>
+              <p>立白集团直播业务<span>私域运营事业部总经理</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-65.png" alt="" />
+              <h3>郑秋实</h3>
+              <p>怀禹咨询CEO <span>全宇宙社群创始人</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-66.png" alt="" />
+              <h3>张艳飞</h3>
+              <p>数据猿创始人</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-67.png" alt="" />
+              <h3>杨炯纬</h3>
+              <p>卫瓴科技创始人兼CEO</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-68.png" alt="" />
+              <h3>许晓辉</h3>
+              <p class="pc">互联网营销人<span>万物天泽营销咨询创始人</span></p>
+              <p class="mb">
+                互联网营销人<span style="width: 110%"
+                  >万物天泽营销咨询创始人</span
+                >
+              </p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-69.png" alt="" />
+              <h3>朱蕾</h3>
+              <p>百度营销研究院院长</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-70.png" alt="" />
+              <h3>徐俊</h3>
+              <p>伟达公关中国区首席执行官</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-71.png" alt="" />
+              <h3>王正新</h3>
+              <p>TMA,金鼠标等行业<span>大赛终审评委</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-72.png" alt="" />
+              <h3>王振同</h3>
+              <p>爱设计联合创始人</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-73.png" alt="" />
+              <h3>檀林</h3>
+              <p>海尔海创汇首席生态官<span>浦门公社联合创始人</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-74.png" alt="" />
+              <h3>粟凡</h3>
+              <p>曲美家居集团公共<span>事务部总经理</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-75.png" alt="" />
+              <h3>商容</h3>
+              <p>微软亚太研发集团运营<span>传播及公共事务副总裁</span></p>
+            </div>
+
+            <div class="info-box">
+              <img src="./src/images/houette-img-76.png" alt="" />
+              <h3>平原</h3>
+              <p>海天瑞声常务副总裁</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-77.png" alt="" />
+              <h3>余剑</h3>
+              <p>易点网络运营官</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-78.png" alt="" />
+              <h3>顾学斌</h3>
+              <p>IAEE亚洲委员会主席 <span>WeMeet CEO</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-79.png" alt="" />
+              <h3>彭罕妮</h3>
+              <p>思享营销咨询创始人</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-80.png" alt="" />
+              <h3>毛炜</h3>
+              <p>《订阅经济》作者 <span>SaaS领域专家</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-81.png" alt="" />
+              <h3>马旗戟</h3>
+              <p>中国商务广告协会数字营销研究院院长</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-82.png" alt="" />
+              <h3>马昌博</h3>
+              <p>视知传媒创始人&CEO</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-83.png" alt="" />
+              <h3>李志军</h3>
+              <p>中央财经大学文化与传媒学院广告系教授</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-84.png" alt="" />
+              <h3>李千</h3>
+              <p>五谷磨房集团<span>首席品牌官</span></p>
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="./src/images/houette-img-09.png" alt="" />
-            <img src="./src/images/houette-img-09.png" alt="" />
+            <div class="info-box">
+              <img src="./src/images/houette-img-85.png" alt="" />
+              <h3>李娜</h3>
+              <p>中国广告协会网络直播学院院长</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-86.png" alt="" />
+              <h3>老炣</h3>
+              <p>市场部网创始人</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-87.png" alt="" />
+              <h3>金乃丽</h3>
+              <p>艾瑞咨询合伙人兼艾瑞研究院院长</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-88.png" alt="" />
+              <h3>杨智予</h3>
+              <p>搜狐网络营销部商业化策略副总经理</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-89.png" alt="" />
+              <h3>黄海钧</h3>
+              <p>突彼咨询创始人/To B Brand主理人</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-90.png" alt="" />
+              <h3>段平霞</h3>
+              <p>杭州安恒信息技术股份有限公司高级副总裁</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-91.png" alt="" />
+              <h3>丁丁</h3>
+              <p>
+                粉丝工场创始人
+                <span style="width: 110%">畅销书《深度粉销》作者</span>
+              </p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-92.png" alt="" />
+              <h3>程然 Henry</h3>
+              <p>和君咨询资深咨询师</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-93.png" alt="" />
+              <h3>成俊杰</h3>
+              <p>传声营销CEO</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-94.png" alt="" />
+              <h3>曾巧</h3>
+              <p>Morketing创始人兼CEO</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-95.png" alt="" />
+              <h3>蔡尚融</h3>
+              <p>帝瑞集团董事长兼CEO</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-96.png" alt="" />
+              <h3>鲍燕悦</h3>
+              <p>欧莱雅中国校友会联席主席</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-97.png" alt="" />
+              <h3>甘露</h3>
+              <p>理财频道出品人</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-98.png" alt="" />
+              <h3>陈欣</h3>
+              <p>凤凰网品牌中心总经理</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-99.png" alt="" />
+              <h3>董斌</h3>
+              <p>科大讯飞品牌市场部 <span>副总经理</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-100.png" alt="" />
+              <h3>范怿</h3>
+              <p>胖鲸创始人&CEO</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-101.png" alt="" />
+              <h3>方立军</h3>
+              <p>金鼠标、TMA联合创办人及执行主席</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-102.png" alt="" />
+              <h3>侯燕</h3>
+              <p>微博商业市场总经理</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-103.png" alt="" />
+              <h3>简昉</h3>
+              <p>天乐邦创始人</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-104.png" alt="" />
+              <h3>刘广飞</h3>
+              <p>广告与品牌营销专家</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-105.png" alt="" />
+              <h3>路娜</h3>
+              <p>东软网安事业部副总兼<span>东软集成公司副总经理</span></p>
+            </div>
           </div>
           <div class="swiper-slide">
-            <img src="./src/images/houette-img-11.png" alt="" />
-            <img src="./src/images/houette-img-11.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./src/images/houette-img-13.png" alt="" />
-            <img src="./src/images/houette-img-13.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./src/images/houette-img-15.png" alt="" />
-            <img src="./src/images/houette-img-15.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./src/images/houette-img-17.png" alt="" />
-            <img src="./src/images/houette-img-17.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./src/images/houette-img-19.png" alt="" />
-            <img src="./src/images/houette-img-19.png" alt="" />
+            <div class="info-box">
+              <img src="./src/images/houette-img-106.png" alt="" />
+              <h3>渠成 Allen Qu</h3>
+              <p>耐特康赛创始人<span>董事长兼CEO</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-107.png" alt="" />
+              <h3>石岩</h3>
+              <p>灵狐科技创始合伙人</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-108.png" alt="" />
+              <h3>苏志国</h3>
+              <p>唐硕体验云资深合伙人<span>董事总经理</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-109.png" alt="" />
+              <h3>唐超</h3>
+              <p>今日广告CEO&创始人</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-110.png" alt="" />
+              <h3>唐文</h3>
+              <p>氢原子CEO</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-111.png" alt="" />
+              <h3>王虎</h3>
+              <p>哲基咨询创始人、执行董事</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-112.png" alt="" />
+              <h3>王立勇</h3>
+              <p>司南创新研究院创办人 <span>执行院长</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-113.png" alt="" />
+              <h3>谢文砚</h3>
+              <p>小冰公司市场公关总监</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-114.png" alt="" />
+              <h3>余海鹏</h3>
+              <p>曼朗创始人&CEO</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-116.png" alt="" />
+              <h3>朱永强</h3>
+              <p>Vista威信传播创始人 <span>CEO</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-117.png" alt="" />
+              <h3>王迪</h3>
+              <p>复旦大学新闻学院院长<span>助理副教授</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-118.png" alt="" />
+              <h3>刀姐 doris</h3>
+              <p>刀法Digipont <span>创始人兼CEO</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-119.png" alt="" />
+              <h3>王学军</h3>
+              <p>美国F5公司中国区 <span>资深市场总监</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-120.png" alt="" />
+              <h3>陶鑫亚</h3>
+              <p>弘玑首席市场官</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-121.png" alt="" />
+              <h3>汤春兰 Judy</h3>
+              <p>英国集宝中国区<span>执行院长</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-1211.png" alt="" />
+              <h3>李智能</h3>
+              <p>GDMS&Plus品牌<span>创始人</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-1212.png" alt="" />
+              <h3>田原</h3>
+              <p>ToB营销增长顾问</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-1213.png" alt="" />
+              <h3>余剑</h3>
+              <p>易点网络运营官</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-1215.png" alt="" />
+              <h3>朱强</h3>
+              <p>TO B CGO创始人</p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-1214.png" alt="" />
+              <h3>张嘉伟</h3>
+              <p>国家林草局管理干部<span>学院网络培训处处长</span></p>
+            </div>
+            <div class="info-box">
+              <img src="./src/images/houette-img-63.png" alt="" />
+              <h3>&nbsp;</h3>
+              <p class="pc">更多重磅顾问持续加入中！</p>
+              <p class="mb">更多重磅顾问 <span>持续加入中！</span></p>
+            </div>
           </div>
         </div>
       </div>
@@ -1086,29 +2329,22 @@
 </div>
 
 <!-- authority -->
-<div class="authority pc l-section" id="authority">
-  <div class="l-container">
+<div class="authority l-section" id="authority">
+  <div class="l-container pc">
     <div class="l-title">
       <img src="./src/images/authority-title.png" alt="" />
     </div>
     <div class="l-body">
-      <img src="./src/images/authority-img-01.png" alt="" />
       <img src="./src/images/authority-img-02.png" alt="" />
+      <img src="./src/images/authority-img-01.png" alt="" />
       <div class="info-box">
         <p>
-          企业直播创见大会，是企业直播行业领军企业微吼面向全球企业直播领域规格最高、规模最大，线上线下深度融合年度盛会。
-        </p>
-        <p>
-          大会旨在面向企业直播营销和企业直播培训两大场景，汇聚全球企业直播先锋，与企业直播生态上中下游企业，挖局企业数字化营销和数字化学习最佳实践，探索企业直播的发展趋势和无限潜能，用企业直播描绘全球企业数字化发展未来！！
+          为培养企业直播领域专业人才，推动产业创新发展，直播研究院联合全球知名营销咨询机构科特勒咨询集团，以及专注企业数字化学习人才能力“研究和赋能”的机构博奥研究院，共同发起国内首家【企业直播营销师】、【企业直播培训师】培训认证体系。
         </p>
       </div>
     </div>
   </div>
-</div>
-
-<!-- authority -->
-<div class="authority mb l-section" id="authority">
-  <div class="l-container">
+  <div class="l-container mb">
     <div class="l-title">
       <img src="./src/images/authority-title.png" alt="" />
     </div>
@@ -1116,23 +2352,20 @@
       <div class="swiper-container swiper-authority">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="./src/images/authority-img-01.png" alt="" />
-          </div>
-          <div class="swiper-slide">
             <img src="./src/images/authority-img-02.png" alt="" />
           </div>
+          <div class="swiper-slide">
+            <img src="./src/images/authority-img-01.png" alt="" />
+          </div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev swiper-button-prev-authority"></div>
+        <div class="swiper-button-next swiper-button-next-authority"></div>
         <div class="swiper-pagination swiper-pagination-authority"></div>
       </div>
 
       <div class="info-box">
         <p>
-          企业直播创见大会，是企业直播行业领军企业微吼面向全球企业直播领域规格最高、规模最大，线上线下深度融合年度盛会。
-        </p>
-        <p>
-          大会旨在面向企业直播营销和企业直播培训两大场景，汇聚全球企业直播先锋，与企业直播生态上中下游企业，挖局企业数字化营销和数字化学习最佳实践，探索企业直播的发展趋势和无限潜能，用企业直播描绘全球企业数字化发展未来！！
+          为培养企业直播领域专业人才，推动产业创新发展，直播研究院联合全球知名营销咨询机构科特勒咨询，以及专注企业数字化学习人才能力“研究和赋能”机构博奥研究院，共同发起的国内首家【企业直播营销师】、【企业直播培训师】培训认证体系。
         </p>
       </div>
     </div>
@@ -1235,10 +2468,27 @@
               </div>
             </a>
           </div>
+          <div class="swiper-slide">
+            <a
+              href="https://mp.weixin.qq.com/s/epl86SueRAftrANPFOTDzw"
+              target="_blank"
+            >
+              <div class="img-box">
+                <img src="./src/images/guest-img-06.png" alt="" />
+              </div>
+              <div class="info-box">
+                <h3>微吼董如芳：在中国，To B直播创业者都有“自虐”倾向</h3>
+                <p class="js-title">
+                  疫情之下，许多“1年10倍”增长的行业蓬勃涌现，其中包括企业直播。
+                </p>
+                <p>甲子光年</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev-guest"></div>
+      <div class="swiper-button-next-guest"></div>
       <div class="swiper-pagination swiper-pagination-guest"></div>
     </div>
   </div>
@@ -1254,19 +2504,53 @@
       <section class="clearfix">
         <h3>
           <p>主办方</p>
-          <p>战略合作伙伴</p>
         </h3>
         <div><img src="./src/images/logo-002.png" alt="" /></div>
         <div><img src="./src/images/logo-001.png" alt="" /></div>
       </section>
       <section class="clearfix">
-        <h3>媒体合作伙伴</h3>
+        <h3>生态合作伙伴<span>( 排名不分先后 )</span></h3>
+        <div><img src="./src/images/logo-00-01.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-02.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-03.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-04.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-05.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-06.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-07.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-08.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-09.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-10.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-11.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-12.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-13.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-14.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-15.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-16.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-17.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-18.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-19.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-20.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-21.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-22.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-23.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-24.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-25.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-26.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-27.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-28.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-29.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-30.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-31.png" alt="" /></div>
+        <div><img src="./src/images/logo-00-32.png" alt="" /></div>
+      </section>
+      <section class="clearfix">
+        <h3>媒体合作伙伴<span>( 排名不分先后 )</span></h3>
         <div><img src="./src/images/logo-01.png" alt="" /></div>
         <div><img src="./src/images/logo-23.png" alt="" /></div>
         <div><img src="./src/images/logo-03.png" alt="" /></div>
         <div><img src="./src/images/logo-09.png" alt="" /></div>
         <div><img src="./src/images/logo-18.png" alt="" /></div>
-        <div><img src="./src/images/logo-19.png" alt="" /></div>
+        <div><img src="./src/images/logo-33.png" alt="" /></div>
         <div><img src="./src/images/logo-15.png" alt="" /></div>
         <div><img src="./src/images/logo-21.png" alt="" /></div>
         <div><img src="./src/images/logo-30.png" alt="" /></div>
@@ -1294,9 +2578,16 @@
         <div><img src="./src/images/logo-02.png" alt="" /></div>
         <div><img src="./src/images/logo-07.png" alt="" /></div>
         <div><img src="./src/images/logo-04.png" alt="" /></div>
-        <div><img src="./src/images/logo-33.png" alt="" /></div>
+        <div><img src="./src/images/logo-19.png" alt="" /></div>
         <div><img src="./src/images/logo-17.png" alt="" /></div>
         <div><img src="./src/images/logo-31.png" alt="" /></div>
+        <div><img src="./src/images/logo-82.png" alt="" /></div>
+        <div><img src="./src/images/logo-83.png" alt="" /></div>
+        <div><img src="./src/images/logo-84.png" alt="" /></div>
+        <div><img src="./src/images/logo-85.png" alt="" /></div>
+        <div><img src="./src/images/logo-86.png" alt="" /></div>
+        <div><img src="./src/images/logo-87.png" alt="" /></div>
+        <div><img src="./src/images/logo-88.png" alt="" /></div>
       </section>
     </div>
   </div>
@@ -1309,8 +2600,10 @@
       <img src="./src/images/guide-title.png" alt="" />
     </div>
     <div class="l-body">
-      <img class="pc" src="./src/images/guide-img.jpg" alt="" />
-      <img class="mb" src="./src/images/guide-img-mb.jpg" alt="" />
+      <div class="img-box">
+        <img class="pc" src="./src/images/guide-img.jpg" alt="" />
+        <img class="mb" src="./src/images/guide-img-mb.jpg" alt="" />
+      </div>
       <div class="info-box">
         <section>
           <h3>酒店地址</h3>
@@ -1318,18 +2611,17 @@
         </section>
         <section>
           <h3>签到时间</h3>
-          <p>2022年1月6日上午8:30-9:00签到</p>
+          <p>2022年3月4日上午8:30-9:00签到</p>
         </section>
         <section>
           <h3>签到地址</h3>
-          <p>酒店三楼，扬子1号宴会厅</p>
+          <p>酒店三楼</p>
         </section>
         <section>
           <h3>防疫须知</h3>
-          <p>1）健康码为绿码，不带星号正常接待</p>
-          <p>2）14天内途径中高风险地区，需持72小时核酸证明</p>
-          <p>3）行程码非绿色的人员暂不接待</p>
-          <p>一切皆以上海当地政府机构发布内容为准</p>
+          <p>1）健康码及行程卡为绿码</p>
+          <p>2）健康码带星号，需持48小时核酸证明进场</p>
+          <p>一切防疫措施皆以上海地区政府机构发布政策为准</p>
         </section>
         <div class="clearfix btn-box">
           <a href="javascript:void(0);" class="l-btn green from-btn-click"
@@ -1347,7 +2639,7 @@
       <h3>活动报名</h3>
       <form
         data-cl-attached="false"
-        data-cl-id="73d59294f34f40f68ac2c619422c2ff0"
+        data-cl-id="7e2a40224df94d8c8f53da319adbf494"
       >
         <div class="name-box">
           <p>
@@ -1434,6 +2726,18 @@
   </div>
 </div>
 
+<div class="model-box">
+  <div class="model-wrapper">
+    <div class="model-content">
+      <img src="./src/images/success-icon-01.svg" alt="" />
+      <h3>恭喜您报名成功！</h3>
+      <p>线下参会审核结构将短信通知；线上直播将在开播前短信提醒</p>
+      <a href="javascript:void(0);" class="l-btn green">确定</a>
+      <i class="close-icon"></i>
+    </div>
+  </div>
+</div>
+
 <script src="//cbe.huiju.cool/cbe/collect?tid=1768189403&at=0&h=web"></script>
 </div>
     <div class="footer"><div class="footer-copyright-container">
@@ -1464,6 +2768,10 @@
       <div class="wechat-box">
         <p>手机扫一扫</p>
         <img src="./src/images/fixed-wechat-img.png" alt="" />
+        <div class="copy-box">
+          <input type="text" value="elic.vhall.com" />
+          <a href="javascript:void(0);" class="copy-btn">复制</a>
+        </div>
       </div>
     </li>
     <li class="pc">
@@ -1494,8 +2802,8 @@
             <a
               href="https://a.huiju.cool/service/extfile/page/d00e851aca8d4497920de72038332aa9"
               target="_blank"
-              >《2021年中国企业直播发展路径研究报告》</a
-            >
+              class="hiddenshow"
+            ></a>
           </p>
           <p>
             <a
@@ -1550,16 +2858,20 @@
       </ul>
     </li>
     <li class="pc">
-      <a href="javascript:void(0)" class="tel-btn">
-        <i style="background: url(./../images/fixed-tel.svg)"></i>
-        <span>联系我们</span></a
+      <a
+        href="https://www.uphoto.cn/album_ia236785560.html"
+        target="_blank"
+        class="tel-btn"
       >
-      <ul>
+        <i style="background: url(./../images/fixed-tel.svg)"></i>
+        <span>图片直播</span></a
+      >
+      <!-- <ul>
         <li>
-          <h3>联系我们</h3>
+          <h3>图片直播</h3>
           <p>拨打 <span>400-888-9970</span></p>
         </li>
-      </ul>
+      </ul> -->
     </li>
     <li class="pc">
       <a href="javascript:void(0);" class="yuyue from-btn-click">
@@ -1567,12 +2879,9 @@
       ></a>
     </li>
     <li class="mb">
-      <a
-        href="https://vhall.s4.udesk.cn/im_client/?web_plugin_id=15038"
-        class="tel-online"
-      >
+      <a href="https://www.uphoto.cn/album_ia236785560.html" class="tel-online">
         <i style="background: url(./../images/fixed-tel.svg)"></i>
-        <span>在线咨询</span></a
+        <span>图片直播</span></a
       >
     </li>
     <li class="mb">
@@ -1585,6 +2894,10 @@
       >
     </li>
   </ul>
+</div>
+
+<div class="tips-success">
+  <p><i></i>复制成功！</p>
 </div>
 </div>
     <script src="./src/js/index.js"></script>
@@ -1611,7 +2924,7 @@
       )
       ud({
         code: "fk7hebc",
-        link: "https://vhall.s4.udesk.cn/im_client/?web_plugin_id=15038"
+        link: "https://vhall.s4.udesk.cn/im_client/?web_plugin_id=27008"
       })
     </script>
   </body>
